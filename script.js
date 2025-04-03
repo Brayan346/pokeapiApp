@@ -1,6 +1,6 @@
 async function getPokemon() {
     const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+    const url = `https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
 
     try {
         const response = await fetch(url, { mode: 'cors' });

@@ -1,97 +1,54 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #222;
     color: white;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-/* Header */
 header {
     background-color: #444;
     padding: 15px;
-    font-size: 1.5rem;
 }
 
-/* Botón de instalación */
-#btn-instalar {
-    display: block;
-    background-color: #f4b400;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin: 10px auto;
-}
-
-#btn-instalar:hover {
-    background-color: #e09b00;
-}
-
-/* Contenedor principal */
-main {
-    padding: 20px;
-}
-
-/* Campo de búsqueda */
-#search {
-    width: 80%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-/* Contenedor de Pokémon */
-#pokemon-container {
+nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding-top: 15px;
-}
-
-/* Tarjeta de Pokémon */
-.pokemon-card {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 10px;
-    width: 160px;
-    text-align: center;
-    transition: transform 0.2s ease-in-out;
-}
-
-.pokemon-card:hover {
-    transform: scale(1.1);
-}
-
-.pokemon-card img {
-    width: 100px;
-}
-
-/* Barra de navegación */
-.c-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #444;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
+    margin: 20px 0;
 }
 
 .c-nav-item {
-    background-color: #f4b400;
-    color: black;
-    font-weight: bold;
     padding: 10px;
+    margin: 5px;
+    background-color: #f4b400;
     border: none;
     cursor: pointer;
-    transition: background-color 0.2s;
+    color: black;
+    font-weight: bold;
 }
 
 .c-nav-item:hover {
     background-color: #e09b00;
+}
+
+input {
+    padding: 5px;
+    margin: 10px;
+}
+
+#pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-card {
+    background-color: #333;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.pokemon-card img {
+    width: 100px;
 }

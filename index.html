@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéAPI</title>
-    <link rel="stylesheet" href="style.css">
+    <title>PokéAPI Explorer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>PokéAPI Explorer</h1>
-        <input type="text" id="pokemonName" placeholder="Introduce el nombre o ID">
-        <button onclick="getPokemon()">Buscar</button>
-        <div id="pokemonInfo"></div>
-    </div>
+    <header>
+        <h1>Explorador de Pokémon</h1>
+    </header>
+
+    <nav>
+        <button class="c-nav-item" onclick="mostrarDatos()">Usuario</button>
+        <button class="c-nav-item" onclick="mostrarMios()">Mios</button>
+        <button class="c-nav-item" onclick="mostrarAleatorio()">Aleatorio</button>
+        <button class="c-nav-item" onclick="mostrarFavoritos()">Favoritos</button>
+        <button class="c-nav-item" onclick="mostrarLista()">Lista</button>
+    </nav>
+
+    <main id="content">
+        <input type="text" id="search" placeholder="Buscar Pokémon...">
+        <div id="pokemon-container"></div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
